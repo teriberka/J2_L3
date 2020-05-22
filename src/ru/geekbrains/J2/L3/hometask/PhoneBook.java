@@ -4,15 +4,14 @@ import java.util.HashMap;
 
 
 public class PhoneBook {
-    public HashMap<String, HashMap<String, String>> myPhoneBook = new HashMap<>();
-    public HashMap<String, HashMap<String, String>> myPhoneBook = new HashMap<>();
+    public HashMap<String, Object> myPhoneBook = new HashMap<>();
 
 
-    public HashMap<String, String> getInfo(String s){
+    public Object getInfo(String s){
         return myPhoneBook.get(s);
     }
 
-    public void addInfo(String lastname, HashMap<String, String> record) {
-        myPhoneBook.put(lastname, record);
+    public void addInfo(String lastname, Object person) {
+        myPhoneBook.put(lastname, person);
     }
 }
