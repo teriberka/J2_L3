@@ -51,6 +51,7 @@ public class Main {
 
             myHashMap.put(string, count);
         }
+        System.out.println("Part 1 result:");
         System.out.println(myHashMap);
 
 // part 2
@@ -65,13 +66,14 @@ public class Main {
 
         Person person1 = new Person(email1,telnumber1);
 
-        person1.getEmail();
-        person1.getTelNumber();
-
+//        person1.getEmail();
+//        person1.getTelNumber();
 
         PhoneBook myPhoneBook = new PhoneBook();
-
         myPhoneBook.addInfo("Pshennikov",person1);
 
+        System.out.println("Part 2 result:");
+        myPhoneBook.getMail("Pshennikov");
+        myPhoneBook.getNumber("Pshennikov");
     }
 }

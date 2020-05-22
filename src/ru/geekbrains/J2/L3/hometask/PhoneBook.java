@@ -1,17 +1,29 @@
 package ru.geekbrains.J2.L3.hometask;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 
 public class PhoneBook {
-    public HashMap<String, Object> myPhoneBook = new HashMap<>();
+    public HashMap<String, Person> myPhoneBook = new HashMap<>();
 
-
-    public Object getInfo(String s){
-        return myPhoneBook.get(s);
+    public void getMail(String s){
+        ArrayList<String> tel = new ArrayList<String>();
+        ArrayList<String> mail = new ArrayList<String>();
+        Person someperson = new Person(tel,mail);
+        someperson = myPhoneBook.get(s);
+        someperson.getEmail();
     }
 
-    public void addInfo(String lastname, Object person) {
+    public void getNumber(String s){
+        ArrayList<String> tel = new ArrayList<String>();
+        ArrayList<String> mail = new ArrayList<String>();
+        Person someperson = new Person(tel,mail);
+        someperson = myPhoneBook.get(s);
+        someperson.getTelNumber();
+    }
+
+    public void addInfo(String lastname, Person person) {
         myPhoneBook.put(lastname, person);
     }
 }
