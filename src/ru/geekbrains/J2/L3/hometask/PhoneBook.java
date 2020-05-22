@@ -5,6 +5,8 @@ import java.util.HashMap;
 
 public class PhoneBook {
     public HashMap<String, HashMap<String, String>> myPhoneBook = new HashMap<>();
+    public HashMap<String, HashMap<String, String>> myPhoneBook = new HashMap<>();
+
 
     public HashMap<String, String> getInfo(String s){
         return myPhoneBook.get(s);
