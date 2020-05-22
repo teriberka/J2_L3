@@ -18,6 +18,7 @@ public class Main {
     public static void main(String[] args){
         System.out.println("Java 2, Lesson 3");
 
+// part 1:
         String[] myTestArray = {
                 "Вася",
                 "Петя",
@@ -49,8 +50,12 @@ public class Main {
 
             myHashMap.put(string, count);
         }
-
         System.out.println(myHashMap);
+
+// part 2
+
+        PhoneBook myPhoneBook = new PhoneBook();
+
 
     }
 }
