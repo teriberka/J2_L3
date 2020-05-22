@@ -54,10 +54,6 @@ public class Main {
         System.out.println(myHashMap);
 
 // part 2
-
-        PhoneBook myPhoneBook = new PhoneBook();
-
-
         ArrayList<String> email1 = new ArrayList<String>();
         email1.add("testmail@mail.ru");
         email1.add("somemail@mail.ru");
@@ -71,6 +67,11 @@ public class Main {
 
         person1.getEmail();
         person1.getTelNumber();
+
+
+        PhoneBook myPhoneBook = new PhoneBook();
+
+        myPhoneBook.addInfo("Pshennikov",person1);
 
     }
 }
