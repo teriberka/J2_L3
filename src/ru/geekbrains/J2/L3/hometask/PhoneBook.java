@@ -10,7 +10,7 @@ public class PhoneBook {
         return myPhoneBook.get(s);
     }
 
-    public void addInfo(String name, HashMap<String, String> record) {
-        myPhoneBook.put(name, record);
+    public void addInfo(String lastname, HashMap<String, String> record) {
+        myPhoneBook.put(lastname, record);
     }
 }
