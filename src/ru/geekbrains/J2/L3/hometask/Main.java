@@ -12,6 +12,7 @@ package ru.geekbrains.J2.L3.hometask;
 // Следует учесть, что под одной фамилией может быть несколько записей.
 // Итого должно получиться 3 класса Main, PhoneBook, Person.
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Main {
@@ -56,6 +57,20 @@ public class Main {
 
         PhoneBook myPhoneBook = new PhoneBook();
 
+
+        ArrayList<String> email1 = new ArrayList<String>();
+        email1.add("testmail@mail.ru");
+        email1.add("somemail@mail.ru");
+
+        ArrayList<String> telnumber1 = new ArrayList<String>();
+        telnumber1.add("79161234567");
+        telnumber1.add("89126123456");
+        telnumber1.add("+7 (495) 123-45-67");
+
+        Person person1 = new Person(email1,telnumber1);
+
+        person1.getEmail();
+        person1.getTelNumber();
 
     }
 }

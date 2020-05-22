@@ -12,4 +12,12 @@ public class Person {
         this.telNumber = telNumber;
     }
 
+    public void getEmail() {
+        System.out.println(eMail);
+    }
+
+    public void getTelNumber() {
+        System.out.println(telNumber);
+    }
+
 }
